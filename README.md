@@ -13,8 +13,14 @@ API Gateway: The API Gateway is the entry point for all incoming requests to the
 Lambda Functions: Lambda functions are serverless compute units that run in response to events. In this application, there are three Lambda functions that handle different requests:
 
 calculateToll: Calculates the toll for a given payment method and route.
+
+
 getCoordinates: Retrieves the coordinates (latitude and longitude) of the entrance and exit interchanges.
+
+
 getSunsetTime: Calculates the sunset time for a given location and date.
+
+
 Amazon RDS: The Amazon RDS database stores the toll schedules for different payment methods. The database is used by the calculateToll Lambda function to retrieve toll rates.
 
 Amazon S3: The Amazon S3 bucket stores the HTML and CSS files that are used to display the front-end of the application.
@@ -42,12 +48,19 @@ Technologies
 The back-end of the toll calculator is built using the following technologies:
 
 AWS Lambda
+
 API Gateway
+
 Amazon RDS
+
 Amazon S3
+
 Amazon CloudWatch
+
 AWS SAM
+
 AWS CLI
+
 Docker
 
 
